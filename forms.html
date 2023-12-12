@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" id="ashuu">
+        <input type="text">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        let form=document.forms;
+        console.log(form[0]);
+        form[0].addEventListener("submit",(a)=>{
+            a.preventDefault()
+         console.log(form);
+         let inputt=document.getElementById("ashuu");
+         console.log(inputt.value);
+
+         let username=a.target[0].value;
+         console.log(username)
+         let password=a.target[1].value;
+         console.log(password)
+         if(username[0] == "A" && username.length ==10){
+            window.location.assign("./log.html");
+
+         }
+         else
+         {
+          alert("enter valid");
+         }
+        console.log(a.target[1].value);
+
+        
+
+    
+        })
+    </script>
+    
+</body>
+</html>

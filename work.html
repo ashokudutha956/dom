@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>dhoni</button>
+    <button>surya</button>
+    <button>samantha</button>
+    <button>tom&jerry</button>
+    <img src="" alt="">
+    
+    
+    
+    
+    
+    
+    <!-- <div> -->
+
+    <!-- <ol id="hai">
+        <li>
+            ashok
+        </li>
+        
+        <li id="hai22">
+            vinay kumar
+        </li>
+    </ol>  -->
+       <!-- <div id="select"></div>  -->
+    <!-- <h1 id="asd"></h1>  -->
+    <!-- </div> -->
+    <script>
+        // var a=document.getElementById("select");
+        // console.log(a);
+        // var h1created=document.createElement("h1");
+        // console.log(h1created);
+        // h1created.innerText="hai iam ashok"
+        // console.log(h1created);
+        // a.appendChild(h1created);
+
+
+        //  let bcreated=document.createElement("li");
+        // bcreated.innerText="avinash"
+        // var ulget=document.getElementById("hai");
+        // console.log(ulget);
+        // let hai2=document.getElementById("hai");
+        // ulget.insertBefore(bcreated,hai22); 
+
+
+
+        //  let bb=document.getElementById("hai");
+        // bb.replaceWith();
+
+    //  ..............    button click dispaly img............................
+
+        let btn1=document.getElementsByTagName("button");
+        console.log(btn1);
+        let imgcreated=document.querySelectorAll("img");
+        console.log(imgcreated);
+        btn1[0].addEventListener("click",function name(){
+            imgcreated[0].setAttribute("src","./dhoni.jpg");
+            imgcreated[0].style.width="100px";
+            btn1[0].style.color="red";
+            
+        })
+        btn1[1].addEventListener("click",function name(){
+            imgcreated[0].setAttribute("src","./surya.jpg");
+            imgcreated[0].style.width="100px";
+            
+            btn1[1].style.color="blue";
+            
+        })
+        btn1[2].addEventListener("click",function anem(){
+            imgcreated[0].setAttribute("src","./samantah.jpg");
+            imgcreated[0].style.width="100px";
+            btn1[2].style.color="green";
+        })
+        btn1[3].addEventListener("click",function asss(){
+            imgcreated[0].setAttribute("src","./tom&jerry.jpg");
+            imgcreated[0].style.width="100px";
+            btn1[3].style.color="pink";
+        })
+
+        
+</script>
+    
+</body>
+</html>
